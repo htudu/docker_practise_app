@@ -1,0 +1,8 @@
+version: '3'
+services:
+    web:
+        build: app
+        container_name: destiny
+        ports: 
+            - '7000:5000' # "outside port : container port"
+        volumes: ['./app/:/app']
